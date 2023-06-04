@@ -6,11 +6,14 @@ local M = {
   dependencies = {
     {
         'nvim-lua/plenary.nvim',
+        'BurntSushi/ripgrep',
     },
   },
 }
 
 --local actions = require "telescope.actions"
+
+--local builtin = require "telescope.builtin"
 
 M.opts = {
   defaults = {
