@@ -126,4 +126,21 @@ return {
             require("user.lualine")
         end,
     },
+
+    -- 格式化代码
+    { "sbdchd/neoformat" },
+    -- for run test
+    {
+        "nvim-neotest/neotest",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
+            "antoinemadec/FixCursorHold.nvim",
+            "nvim-neotest/neotest-go",
+        },
+        config = function()
+            require("user.neotest")
+        end,
+    },
+
 }
