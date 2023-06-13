@@ -118,4 +118,12 @@ return {
             require("user.tmux-navigator")
         end,
     },
+    --状态栏插件
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
+        config = function()
+            require("user.lualine")
+        end,
+    },
 }
