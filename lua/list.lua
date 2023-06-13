@@ -111,4 +111,11 @@ return {
             require("user.gitsigns")
         end,
     },
+    -- tmux nvim manager
+    {
+        "christoomey/vim-tmux-navigator",
+        config = function()
+            require("user.tmux-navigator")
+        end,
+    },
 }
