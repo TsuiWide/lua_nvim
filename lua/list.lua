@@ -29,6 +29,14 @@ return {
         lazy = false,
         riority = 1000,
     },
+    -- 快捷键查询
+    {
+        "folke/which-key.nvim",
+        lazy = false,
+        config = function()
+            require("user.which-key")
+        end,
+    },
     -- 文件字母查找
     {
         "nvim-telescope/telescope.nvim",
