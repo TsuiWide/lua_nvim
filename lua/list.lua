@@ -64,4 +64,11 @@ return {
             require("user.bufferline")
         end,
     },
+    -- 颜色高亮
+    {
+        "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("user.nvim-treesitter")
+        end,
+    },
 }
