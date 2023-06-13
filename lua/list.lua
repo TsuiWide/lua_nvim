@@ -104,4 +104,11 @@ return {
             require("user.nvim-treesitter")
         end,
     },
+    -- git管理
+    {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require("user.gitsigns")
+        end,
+    },
 }
