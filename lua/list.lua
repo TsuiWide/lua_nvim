@@ -37,6 +37,13 @@ return {
             require("user.which-key")
         end,
     },
+    -- 自动保存
+    {
+        "Pocco81/auto-save.nvim",
+        config = function()
+            require("user.auto-save")
+        end,
+    },
     -- 文件字母查找
     {
         "nvim-telescope/telescope.nvim",
