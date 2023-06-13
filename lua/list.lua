@@ -55,4 +55,13 @@ return {
             require("user.nvim-cmp")
         end,
     },
+    -- buffer
+    {
+        "akinsho/bufferline.nvim",
+        version = "*",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("user.bufferline")
+        end,
+    },
 }

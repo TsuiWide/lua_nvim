@@ -43,3 +43,11 @@ vim.opt.whichwrap:append "<,>,[,],h,l"          -- keys allowed to move to the p
 vim.opt.iskeyword:append "-"                    -- treats words with `-` as single words
 vim.opt.formatoptions:remove { "c", "r", "o" }  -- This is a sequence of letters which describes how automatic formatting is to be done
 vim.opt.linebreak = true
+
+vim.keymapping = {
+    smap = vim.api.nvim_set_keymap,
+    dmap = vim.api.nvim_del_keymap,
+    bsmap = vim.api.nvim_buf_set_keymap,
+    bdmap = vim.api.nvim_buf_del_keymap,
+    opts = { noremap = true, silent = true },
+}
