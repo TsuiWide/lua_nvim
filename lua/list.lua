@@ -44,6 +44,15 @@ return {
             require("user.auto-save")
         end,
     },
+    -- 文件管理系统
+    {
+        "nvim-tree/nvim-tree.lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" }, -- optional, for file icons
+        tag = "nightly", -- optional, updated every week. (see issue #1193)
+        config = function()
+            require("user.nvim-tree")
+        end,
+    },
     -- 文件字母查找
     {
         "nvim-telescope/telescope.nvim",
