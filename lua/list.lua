@@ -29,6 +29,15 @@ return {
         lazy = false,
         riority = 1000,
     },
+    -- 文件字母查找
+    {
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.0",
+        dependencies = { { "nvim-lua/plenary.nvim" } },
+        config = function()
+            require("user.telescope")
+        end,
+    },
     -- 括号自动补全
     {
         "windwp/nvim-autopairs",

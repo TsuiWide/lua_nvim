@@ -1,35 +1,11 @@
-local M = {
-  "nvim-telescope/telescope.nvim",
-  --commit = "40c31fdde93bcd85aeb3447bb3e2a3208395a868",
-  event = "Bufenter",
-  cmd = { "Telescope" },
-  dependencies = {
-    {
-        'nvim-lua/plenary.nvim',
-        'BurntSushi/ripgrep',
-    },
-  },
-}
-
---local actions = require "telescope.actions"
-
---local builtin = require "telescope.builtin"
-
-M.opts = {
-  defaults = {
-    prompt_prefix = " ",
-    selection_caret = " ",
-    path_display = { "smart" },
-    file_ignore_patterns = { ".git/", "node_modules" },
-    mappings = {
-      --i = {
-        --["<Down>"] = actions.move_selection_next,
-        --["<Up>"] = actions.move_selection_previous,
-        --["<C-j>"] = actions.move_selection_next,
-        --["<C-k>"] = actions.move_selection_previous,
-      --},
-    },
-  },
-}
-
-return M
+require("telescope").setup()
+-- find file
+vim.keymapping.smap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", vim.keymapping.opts)
+-- find word
+vim.keymapping.smap("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", vim.keymapping.opts)
+-- oldfiles
+vim.keymapping.smap("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", vim.keymapping.opts)
+-- find help
+vim.keymapping.smap("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", vim.keymapping.opts)
+-- find mark
+vim.keymapping.smap("n", "<leader>fm", "<cmd>Telescope marks<CR>", vim.keymapping.opts)
