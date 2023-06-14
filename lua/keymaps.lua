@@ -21,10 +21,10 @@ keymap("n", "<leader>pv", vim.cmd.Ex, opts)
 -- Normal --
 
 -- Disable arrows key
-keymap("n", "<Up>", "<Nop>", opts)
-keymap("n", "<Down>", "<Nop>", opts)
-keymap("n", "<Right>", "<Nop>", opts)
-keymap("n", "<Left>", "<Nop>", opts)
+--keymap("n", "<Up>", "<Nop>", opts)
+--keymap("n", "<Down>", "<Nop>", opts)
+--keymap("n", "<Right>", "<Nop>", opts)
+--keymap("n", "<Left>", "<Nop>", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
